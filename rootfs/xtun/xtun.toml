@@ -1,0 +1,9 @@
+mode = "server"
+script = "/xtun/tun_up.sh"
+[logging]
+level = "info"
+output = "stdout"
+[server]
+bind = "0.0.0.0:443"
+[client]
+remote = "ep:443"
