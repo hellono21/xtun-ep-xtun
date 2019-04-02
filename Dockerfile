@@ -5,7 +5,8 @@ FROM alpine:edge
 RUN apk add --no-cache \
       iptables iproute2
 
-COPY rootfs /
+COPY rootfs.tar /
+RUN tar xf /rootfs.tar -C /
 
 EXPOSE 443/udp
 
